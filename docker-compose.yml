@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:15.3-alpine
+    container_name: loco_practice_postgres
+    environment:
+      POSTGRES_USER: loco
+      POSTGRES_DB: loco_practice_development
+      POSTGRES_PASSWORD: "loco"
+    ports:
+      - "5432:5432"
